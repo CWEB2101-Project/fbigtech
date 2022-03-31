@@ -42,3 +42,7 @@ a:hover {color:inherit;}
 a:active {color:inherit;}
 a {text-decoration: none;}
 
+#contact .body {
+  background-image: url('img/contacts.jpg');
+}
+</style>
