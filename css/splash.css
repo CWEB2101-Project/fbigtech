@@ -41,5 +41,4 @@ a:visited {color:inherit;}
 a:hover {color:inherit;}
 a:active {color:inherit;}
 a {text-decoration: none;}
-a: ::backdrop {color: black;}
-
+a::backdrop {color: black;}
