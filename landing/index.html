@@ -1,47 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--Evan Sambugaro Homepage 12-9-2021-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<title>Perception Armored</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML, CSS, Javascript">
+<meta name="author" content="TT">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play&family=Red+Hat+Mono&display=swap" rel="stylesheet">
+
+<style>
+@font-face {
+  font-family: myFirstFont;
+  src: url(fonts/LegendM54.ttf);
+}
+
+body {
+  font-family: myFirstFont;
+  }
+  
+body {
+  background-image: url("images/PA.jpg");
+  background-size: cover; }
+
+h1, h2, h4, h5, h6 {
+  font-family: 'Red Hat Mono', monospace;
+}
+
+ {
+  box-sizing: border-box;
+}
+
+
+h3{
+  font-family: 'Red Hat Mono', monospace;
+  background-color: #99d6ff;
+  background-image:n-resize;
+  width: 70%;
+  height: 50px;
+}
+header {
+  background-image: url("images/num.gif");
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 100%;
+  height: 100px; 
+  background-color: #e6f0ff;
+  width: 100%;
+  height: 100px;
+  background-repeat: end; 
+  padding: 20px;
+  font-size: 30px;
+}
+
+nav a {
+text-decoration: none;}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+.container {
+ width:80%;
+ margin: auto;
+ }
+ 
+article {
+  float: left;
+  opacity: 0.75;
+  background-position: center;
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  background-color: #99d6ff;
+}
+
+section::after {
+  content: "";
+  display: table; 
+  clear: both;
+}
+
+footer {
+	background-image: url("images/num.gif");
+	background-size: cover;
+	background-repeat: repeat-n;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
 </head>
 <body>
-          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a class="navbar-brand" href="#">Perception Armored</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../about/about.html">Our Mission</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../apps/gallery.html">Apps</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../subscribers/subscribe.html">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../download/download.html">Download</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../support/support.html">Support</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../news/news.html">News</a>
-                </li>
-              </ul>
-              <span class="navbar-text">
-                Navbar text with an inline element
-              </span>
-            </div>
-          </nav>
+
+<header>
+  <h2>Perception Armored</h2>
+</header>
+
+<div class="container">
+    
+<section>
+  <nav>
+    <ul>
+	  <li><a href="index.html">Home</a></li>
+      <li><a href="content.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	  <li><a href="questions.html">Questions</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h3>Welcome!</h3>
+  
+  <p>The store that creates or fixes all your gaming needs!</p>
+  <p>Buy, Sell, and Trade with us today!</p>
+  <p>Join the adventure with us today!</p>
+  <h3>Store Hours</h3>
+  <p>We are open everyday from 10am to 8pm</p>
+    <img src="images/logo.jpg" alt="nintendologo" width="275" height="275"/>
+	<img src="images/master.jpg" alt="chief" width="275" height="275"/>
+	<img src="images/luigi.png" alt="luigi" width="275" height="275"/>
+	<img src="images/pika.jpg" alt="pikachu" width="275" height="275"/>
+	
+  </article>
+
+</section>
+<footer>
+  <p>Page Over!</p>
+</footer>
+
+</div><!--end of container-->
+
+<script>
+
+</script>
+
 </body>
 </html>

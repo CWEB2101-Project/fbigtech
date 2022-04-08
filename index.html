@@ -1,23 +1,70 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perception Armored</title>
-    <link rel="stylesheet" href="css/splash.css">
-</head>
 <body>
-
-<audio controls autoPlay loop hidden> 
-    <source src="AKDiscovery.mp3" type="audio/mpeg"> 
-</audio>
-
-      <div class="container">
-        <video autoplay loop muted> 
-            <source src="nodes.mp4" type="video/mp4">
-        </video>
-        <div class="text-box">
-          <h1><a href type="button" class="btn btn-primary" btn-lg btn-block>Perception Armored</h1> 
-      </div>
+    <div class="top-bar">
+        <h1>
+            Perception Armored Dev Forum
+        </h1>
+    </div>
+    <div class="main">
+        <ol>
+        </ol>
+    </div>
+    <script src="data.js"></script>
+    <script>
+        console.log(threads);
+        var container = document.querySelector('ol');
+        for (let thread of threads) {
+            var html = `
+            <li class="row">
+                <a href="/thread.html?${thread.id}">
+                    <h4 class="title">
+                        ${thread.title}
+                    </h4>
+                    <div class="bottom">
+                        <p class="timestamp">
+                            ${new Date(thread.date).toLocaleString()}
+                        </p>
+                        <p class="comment-count">
+                            ${thread.comments.length} comments
+                        </p>
+                    </div>
+                </a>
+            </li>
+            `
+            container.insertAdjacentHTML('beforeend', html);
+        }
+    </script>
+    <style>
+        body {
+            margin: 10px 60px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        h1, h4, ol {
+            margin: 0;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .top-bar {
+            background-color: rgb(230, 85, 59);
+            padding: 0 40px;
+        }
+        .main {
+            background-color: #0213ab;
+            padding: 10px 15px;
+        }
+        .row {
+            padding: 5px 0;
+        }
+        .bottom {
+            display: flex;
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+        }
+        .timestamp {
+            padding-right: 10px;
+        }
+    </style>
 </body>
-<h4><a h4 href="/fbigtech/landing/index.html">Enter</a></h4>
-</html>
