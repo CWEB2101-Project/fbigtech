@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-image: url("images/PA.jpg");
+  background-size: cover; 
+}
+
+nav {
+  float: left;
+  width: 100%;
+  height: 100px; 
+  background-color: #e6f0ff;
+  width: 100%;
+  height: 100px;
+  background-repeat: end; 
+  padding: 20px;
+  font-size: 30px;
+}
+
+nav a {
+text-decoration: none;}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+.container {
+ width:80%;
+ margin: auto;
+ }
+  
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 5px 10px 5px;
+}
+
+.content{
+	width: 20%;
+	margin: 10px;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border-radius:10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding-top: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	transition: .4s;
+}
+
+.content:hover{
+	box-shadow: 0 0 11px rgba(33,33,33,.2);
+	transform: translate(0px, -15px);
+	transition: .6s;
+}
+
+img{
+	width: 250px;
+	height: 250px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+
+@media(max-width: 1000px){
+ .content{
+	width: 46%;
+}
+}
+@media(max-width: 750px){
+ .content{
+	width: 100%;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    
+<section>
+  <nav>
+    <ul>
+	  <li><a href="home.html">Home</a></li>
+      <li><a href="gallery.html">Apps</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="support.html">Support</a></li>
+	  <li><a href="download.html">Download</a></li>
+	  <li><a href="subscribe.html">Pricing</a></li>
+    </ul>
+  </nav>
+
+<div class="gallery">
+	<div class="content">
+	<img src="images/shark.jpg">
+	<h3>Shark Attacks</h3>
+	<a href="https://github.com/perceptionarmored/fbigtech/blob/main/homework/sprint1/10-Advanced-Data-Storage-and-Retrieval/2/Activities/02-Stu_SharkSearch/Solved/Stu_SharkSearch.ipynb" target="_blank">GitHub link to application</a>
+</div>
+	  
+<div class="content">
+	<img src="images/craigslist.jpg">
+	<h3>Craigslist Scraper</h3>
+	<a href="https://github.com/perceptionarmored/fbigtech/blob/main/homework/sprint1/12-Web-Scraping-and-Document-Databases/2/Activities/03-Ins_Craigslist/Solved/Ins_Craigslist.ipynb" target="_blank">GitHub link to application</a>
+</div>
+	  
+<div class="content">
+	<img src="images/netflix.png">
+	<h3>Netflix Movie Search</h3>
+<a href="https://github.com/perceptionarmored/fbigtech/blob/main/homework/sprint1/04-Pandas/1/Activities/02-Stu_NetflixRemix/Solved/NetflixRemix.ipynb" target="_blank">GitHub link to application</a>
+</div>
+<div class="content">
+	<img src="images/pokemon.jpg">
+	<h3>Building a Pokedex</h3>
+<a href="https://github.com/perceptionarmored/fbigtech/blob/main/homework/sprint1/04-Pandas/2/Activities/07-Par_Pokemon/Solved/pokemon.ipynb" target="_blank">GitHub link to application</a>
+</div>
+	<div class="content">
+	<img src="images/heatmap.png">
+	<h3>Geological Heatmap</h3>
+<a href="https://github.com/luka1199/geo-heatmap" target="_blank">GitHub link to application</a>
+</div>
+	<div class="content">
+	<img src="images/crimewatch.png">
+	<h3>Crime Watcher</h3>
+<a href="https://github.com/PaulC91/crime-watch" target="_blank">GitHub link to application</a>
+</div>
+	<div class="content">
+	<img src="images/restaurant.jpg">
+	<h3>Nearest Restaurant</h3>
+<a href="https://github.com/perceptionarmored/fbigtech/blob/main/homework/sprint1/06-Python-APIs/3/Activities/04-Ins_NearestRestr/Solved/NearestRestr.ipynb " target="_blank">GitHub link to application</a>
+</div>
+<div class="content">
+	<img src="images/weather.jpg">
+	<h3>Weather Statistics</h3>
+<a href="https://github.com/perceptionarmored/fbigtech/blob/main/homework/sprint1/06-Python-APIs/2/Activities/07-Stu_Weather_Stats/Solved/weather_stats.ipynb" target="_blank">GitHub link to application</a>
+</div>
+</div>
+</body>
+<h3><a href="home.html">Home</a></h3>
+</html>
